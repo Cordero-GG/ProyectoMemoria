@@ -1,0 +1,5 @@
+# ninja log v6
+6	116	7771500809160816	profiler_lib/CMakeFiles/profiler_lib.dir/profiler.cpp.obj	b202c8c88dbeae10
+118	330	7771500810277618	profiler_lib/libprofiler_lib.a	1151ec21a85c6444
+15	787	7771500809253059	apps/calculadora/CMakeFiles/calculadora.dir/main.cpp.obj	624eb2634ae4ec0
+789	1049	7771500816981202	apps/calculadora/calculadora.exe	83ef2a746a282f0
