@@ -39,13 +39,13 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/
+cmake_ninja_workdir = C$:/Codigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Códigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2025.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Codigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2025.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -56,7 +56,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Códigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2025.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Códigos\Datos 2\ProyectoMemoria\ProyectoMemoria" -B"C:\Códigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Codigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2025.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Codigos\Datos 2\ProyectoMemoria\ProyectoMemoria" -B"C:\Codigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -65,7 +65,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/CMakeLists.txt
+# C:/Codigos/Datos 2/ProyectoMemoria/ProyectoMemoria/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -77,13 +77,15 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_profiler_lib: phony || .
 
-build profiler_lib/CMakeFiles/profiler_lib.dir/profiler.cpp.obj: CXX_COMPILER__profiler_lib_unscanned_Debug C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/profiler_lib/profiler.cpp || cmake_object_order_depends_target_profiler_lib
+build profiler_lib/CMakeFiles/profiler_lib.dir/profiler.cpp.obj: CXX_COMPILER__profiler_lib_unscanned_Debug C$:/Codigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/profiler_lib/profiler.cpp || cmake_object_order_depends_target_profiler_lib
   CONFIG = Debug
   DEP_FILE = profiler_lib\CMakeFiles\profiler_lib.dir\profiler.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/profiler_lib"
+  INCLUDES = -I"C:/Codigos/Datos 2/ProyectoMemoria/ProyectoMemoria/profiler_lib"
   OBJECT_DIR = profiler_lib\CMakeFiles\profiler_lib.dir
   OBJECT_FILE_DIR = profiler_lib\CMakeFiles\profiler_lib.dir
+  TARGET_COMPILE_PDB = profiler_lib\CMakeFiles\profiler_lib.dir\profiler_lib.pdb
+  TARGET_PDB = profiler_lib\libprofiler_lib.pdb
 
 
 # =============================================================================
@@ -99,15 +101,16 @@ build profiler_lib/libprofiler_lib.a: CXX_STATIC_LIBRARY_LINKER__profiler_lib_De
   OBJECT_DIR = profiler_lib\CMakeFiles\profiler_lib.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = profiler_lib\CMakeFiles\profiler_lib.dir\profiler_lib.pdb
   TARGET_FILE = profiler_lib\libprofiler_lib.a
-  TARGET_PDB = profiler_lib.a.dbg
+  TARGET_PDB = profiler_lib\libprofiler_lib.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build profiler_lib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Códigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug\profiler_lib" && "C:\Program Files\JetBrains\CLion 2025.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Codigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug\profiler_lib" && "C:\Program Files\JetBrains\CLion 2025.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -118,7 +121,7 @@ build profiler_lib/edit_cache: phony profiler_lib/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build profiler_lib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Códigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug\profiler_lib" && "C:\Program Files\JetBrains\CLion 2025.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Códigos\Datos 2\ProyectoMemoria\ProyectoMemoria" -B"C:\Códigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Codigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug\profiler_lib" && "C:\Program Files\JetBrains\CLion 2025.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Codigos\Datos 2\ProyectoMemoria\ProyectoMemoria" -B"C:\Codigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -127,7 +130,7 @@ build profiler_lib/rebuild_cache: phony profiler_lib/CMakeFiles/rebuild_cache.ut
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/CMakeLists.txt
+# C:/Codigos/Datos 2/ProyectoMemoria/ProyectoMemoria/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -139,29 +142,35 @@ build profiler_lib/rebuild_cache: phony profiler_lib/CMakeFiles/rebuild_cache.ut
 
 build cmake_object_order_depends_target_calculadora: phony || cmake_object_order_depends_target_profiler_lib
 
-build apps/calculadora/CMakeFiles/calculadora.dir/src/main.cpp.obj: CXX_COMPILER__calculadora_unscanned_Debug C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/apps/calculadora/src/main.cpp || cmake_object_order_depends_target_calculadora
+build apps/calculadora/CMakeFiles/calculadora.dir/src/main.cpp.obj: CXX_COMPILER__calculadora_unscanned_Debug C$:/Codigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/apps/calculadora/src/main.cpp || cmake_object_order_depends_target_calculadora
   CONFIG = Debug
   DEP_FILE = apps\calculadora\CMakeFiles\calculadora.dir\src\main.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/apps/calculadora/include" -I"C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/profiler_lib"
+  INCLUDES = -I"C:/Codigos/Datos 2/ProyectoMemoria/ProyectoMemoria/apps/calculadora/include" -I"C:/Codigos/Datos 2/ProyectoMemoria/ProyectoMemoria/profiler_lib"
   OBJECT_DIR = apps\calculadora\CMakeFiles\calculadora.dir
   OBJECT_FILE_DIR = apps\calculadora\CMakeFiles\calculadora.dir\src
+  TARGET_COMPILE_PDB = apps\calculadora\CMakeFiles\calculadora.dir\
+  TARGET_PDB = apps\calculadora\calculadora.pdb
 
-build apps/calculadora/CMakeFiles/calculadora.dir/src/Calculadora.cpp.obj: CXX_COMPILER__calculadora_unscanned_Debug C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/apps/calculadora/src/Calculadora.cpp || cmake_object_order_depends_target_calculadora
+build apps/calculadora/CMakeFiles/calculadora.dir/src/Calculadora.cpp.obj: CXX_COMPILER__calculadora_unscanned_Debug C$:/Codigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/apps/calculadora/src/Calculadora.cpp || cmake_object_order_depends_target_calculadora
   CONFIG = Debug
   DEP_FILE = apps\calculadora\CMakeFiles\calculadora.dir\src\Calculadora.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/apps/calculadora/include" -I"C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/profiler_lib"
+  INCLUDES = -I"C:/Codigos/Datos 2/ProyectoMemoria/ProyectoMemoria/apps/calculadora/include" -I"C:/Codigos/Datos 2/ProyectoMemoria/ProyectoMemoria/profiler_lib"
   OBJECT_DIR = apps\calculadora\CMakeFiles\calculadora.dir
   OBJECT_FILE_DIR = apps\calculadora\CMakeFiles\calculadora.dir\src
+  TARGET_COMPILE_PDB = apps\calculadora\CMakeFiles\calculadora.dir\
+  TARGET_PDB = apps\calculadora\calculadora.pdb
 
-build apps/calculadora/CMakeFiles/calculadora.dir/src/Potencia.cpp.obj: CXX_COMPILER__calculadora_unscanned_Debug C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/apps/calculadora/src/Potencia.cpp || cmake_object_order_depends_target_calculadora
+build apps/calculadora/CMakeFiles/calculadora.dir/src/Potencia.cpp.obj: CXX_COMPILER__calculadora_unscanned_Debug C$:/Codigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/apps/calculadora/src/Potencia.cpp || cmake_object_order_depends_target_calculadora
   CONFIG = Debug
   DEP_FILE = apps\calculadora\CMakeFiles\calculadora.dir\src\Potencia.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/apps/calculadora/include" -I"C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/profiler_lib"
+  INCLUDES = -I"C:/Codigos/Datos 2/ProyectoMemoria/ProyectoMemoria/apps/calculadora/include" -I"C:/Codigos/Datos 2/ProyectoMemoria/ProyectoMemoria/profiler_lib"
   OBJECT_DIR = apps\calculadora\CMakeFiles\calculadora.dir
   OBJECT_FILE_DIR = apps\calculadora\CMakeFiles\calculadora.dir\src
+  TARGET_COMPILE_PDB = apps\calculadora\CMakeFiles\calculadora.dir\
+  TARGET_PDB = apps\calculadora\calculadora.pdb
 
 
 # =============================================================================
@@ -178,16 +187,17 @@ build apps/calculadora/calculadora.exe: CXX_EXECUTABLE_LINKER__calculadora_Debug
   OBJECT_DIR = apps\calculadora\CMakeFiles\calculadora.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = apps\calculadora\CMakeFiles\calculadora.dir\
   TARGET_FILE = apps\calculadora\calculadora.exe
   TARGET_IMPLIB = apps\calculadora\libcalculadora.dll.a
-  TARGET_PDB = calculadora.exe.dbg
+  TARGET_PDB = apps\calculadora\calculadora.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build apps/calculadora/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Códigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug\apps\calculadora" && "C:\Program Files\JetBrains\CLion 2025.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Codigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug\apps\calculadora" && "C:\Program Files\JetBrains\CLion 2025.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -198,7 +208,7 @@ build apps/calculadora/edit_cache: phony apps/calculadora/CMakeFiles/edit_cache.
 # Utility command for rebuild_cache
 
 build apps/calculadora/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Códigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug\apps\calculadora" && "C:\Program Files\JetBrains\CLion 2025.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Códigos\Datos 2\ProyectoMemoria\ProyectoMemoria" -B"C:\Códigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Codigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug\apps\calculadora" && "C:\Program Files\JetBrains\CLion 2025.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Codigos\Datos 2\ProyectoMemoria\ProyectoMemoria" -B"C:\Codigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -207,7 +217,7 @@ build apps/calculadora/rebuild_cache: phony apps/calculadora/CMakeFiles/rebuild_
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/CMakeLists.txt
+# C:/Codigos/Datos 2/ProyectoMemoria/ProyectoMemoria/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -219,13 +229,15 @@ build apps/calculadora/rebuild_cache: phony apps/calculadora/CMakeFiles/rebuild_
 
 build cmake_object_order_depends_target_simulador: phony || cmake_object_order_depends_target_profiler_lib
 
-build apps/simulador/CMakeFiles/simulador.dir/main.cpp.obj: CXX_COMPILER__simulador_unscanned_Debug C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/apps/simulador/main.cpp || cmake_object_order_depends_target_simulador
+build apps/simulador/CMakeFiles/simulador.dir/main.cpp.obj: CXX_COMPILER__simulador_unscanned_Debug C$:/Codigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/apps/simulador/main.cpp || cmake_object_order_depends_target_simulador
   CONFIG = Debug
   DEP_FILE = apps\simulador\CMakeFiles\simulador.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/profiler_lib"
+  INCLUDES = -I"C:/Codigos/Datos 2/ProyectoMemoria/ProyectoMemoria/profiler_lib"
   OBJECT_DIR = apps\simulador\CMakeFiles\simulador.dir
   OBJECT_FILE_DIR = apps\simulador\CMakeFiles\simulador.dir
+  TARGET_COMPILE_PDB = apps\simulador\CMakeFiles\simulador.dir\
+  TARGET_PDB = apps\simulador\simulador.pdb
 
 
 # =============================================================================
@@ -242,16 +254,17 @@ build apps/simulador/simulador.exe: CXX_EXECUTABLE_LINKER__simulador_Debug apps/
   OBJECT_DIR = apps\simulador\CMakeFiles\simulador.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = apps\simulador\CMakeFiles\simulador.dir\
   TARGET_FILE = apps\simulador\simulador.exe
   TARGET_IMPLIB = apps\simulador\libsimulador.dll.a
-  TARGET_PDB = simulador.exe.dbg
+  TARGET_PDB = apps\simulador\simulador.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build apps/simulador/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Códigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug\apps\simulador" && "C:\Program Files\JetBrains\CLion 2025.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Codigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug\apps\simulador" && "C:\Program Files\JetBrains\CLion 2025.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -262,7 +275,7 @@ build apps/simulador/edit_cache: phony apps/simulador/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build apps/simulador/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Códigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug\apps\simulador" && "C:\Program Files\JetBrains\CLion 2025.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Códigos\Datos 2\ProyectoMemoria\ProyectoMemoria" -B"C:\Códigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Codigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug\apps\simulador" && "C:\Program Files\JetBrains\CLion 2025.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Codigos\Datos 2\ProyectoMemoria\ProyectoMemoria" -B"C:\Codigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -271,7 +284,7 @@ build apps/simulador/rebuild_cache: phony apps/simulador/CMakeFiles/rebuild_cach
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/CMakeLists.txt
+# C:/Codigos/Datos 2/ProyectoMemoria/ProyectoMemoria/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -283,12 +296,14 @@ build apps/simulador/rebuild_cache: phony apps/simulador/CMakeFiles/rebuild_cach
 
 build cmake_object_order_depends_target_profiler_gui: phony || .
 
-build interfaz/CMakeFiles/profiler_gui.dir/main.cpp.obj: CXX_COMPILER__profiler_gui_unscanned_Debug C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/interfaz/main.cpp || cmake_object_order_depends_target_profiler_gui
+build interfaz/CMakeFiles/profiler_gui.dir/main.cpp.obj: CXX_COMPILER__profiler_gui_unscanned_Debug C$:/Codigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/interfaz/main.cpp || cmake_object_order_depends_target_profiler_gui
   CONFIG = Debug
   DEP_FILE = interfaz\CMakeFiles\profiler_gui.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
   OBJECT_DIR = interfaz\CMakeFiles\profiler_gui.dir
   OBJECT_FILE_DIR = interfaz\CMakeFiles\profiler_gui.dir
+  TARGET_COMPILE_PDB = interfaz\CMakeFiles\profiler_gui.dir\
+  TARGET_PDB = interfaz\profiler_gui.pdb
 
 
 # =============================================================================
@@ -305,16 +320,17 @@ build interfaz/profiler_gui.exe: CXX_EXECUTABLE_LINKER__profiler_gui_Debug inter
   OBJECT_DIR = interfaz\CMakeFiles\profiler_gui.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
+  TARGET_COMPILE_PDB = interfaz\CMakeFiles\profiler_gui.dir\
   TARGET_FILE = interfaz\profiler_gui.exe
   TARGET_IMPLIB = interfaz\libprofiler_gui.dll.a
-  TARGET_PDB = profiler_gui.exe.dbg
+  TARGET_PDB = interfaz\profiler_gui.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build interfaz/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Códigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug\interfaz" && "C:\Program Files\JetBrains\CLion 2025.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Codigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug\interfaz" && "C:\Program Files\JetBrains\CLion 2025.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -325,7 +341,7 @@ build interfaz/edit_cache: phony interfaz/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build interfaz/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Códigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug\interfaz" && "C:\Program Files\JetBrains\CLion 2025.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Códigos\Datos 2\ProyectoMemoria\ProyectoMemoria" -B"C:\Códigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Codigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug\interfaz" && "C:\Program Files\JetBrains\CLion 2025.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Codigos\Datos 2\ProyectoMemoria\ProyectoMemoria" -B"C:\Codigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -357,35 +373,35 @@ build simulador.exe: phony apps/simulador/simulador.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug
+# Folder: C:/Codigos/Datos 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug
 
 build all: phony profiler_lib/all apps/calculadora/all apps/simulador/all interfaz/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/apps/calculadora
+# Folder: C:/Codigos/Datos 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/apps/calculadora
 
 build apps/calculadora/all: phony apps/calculadora/calculadora.exe
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/apps/simulador
+# Folder: C:/Codigos/Datos 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/apps/simulador
 
 build apps/simulador/all: phony apps/simulador/simulador.exe
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/interfaz
+# Folder: C:/Codigos/Datos 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/interfaz
 
 build interfaz/all: phony interfaz/profiler_gui.exe
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/profiler_lib
+# Folder: C:/Codigos/Datos 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/profiler_lib
 
 build profiler_lib/all: phony profiler_lib/libprofiler_lib.a
 
@@ -396,14 +412,14 @@ build profiler_lib/all: phony profiler_lib/libprofiler_lib.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/cmake_install.cmake C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/profiler_lib/cmake_install.cmake C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/apps/calculadora/cmake_install.cmake C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/apps/simulador/cmake_install.cmake C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/interfaz/cmake_install.cmake: RERUN_CMAKE | C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/CMakeLists.txt C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/apps/calculadora/CMakeLists.txt C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/apps/simulador/CMakeLists.txt C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/interfaz/CMakeLists.txt C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/profiler_lib/CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.0.2/CMakeCXXCompiler.cmake CMakeFiles/4.0.2/CMakeRCCompiler.cmake CMakeFiles/4.0.2/CMakeSystem.cmake
+build build.ninja C$:/Codigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/cmake_install.cmake C$:/Codigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/profiler_lib/cmake_install.cmake C$:/Codigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/apps/calculadora/cmake_install.cmake C$:/Codigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/apps/simulador/cmake_install.cmake C$:/Codigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/interfaz/cmake_install.cmake: RERUN_CMAKE | C$:/Codigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/CMakeLists.txt C$:/Codigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/apps/calculadora/CMakeLists.txt C$:/Codigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/apps/simulador/CMakeLists.txt C$:/Codigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/interfaz/CMakeLists.txt C$:/Codigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/profiler_lib/CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCXXCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeDetermineCompilerSupport.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeDetermineRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeRCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeSystem.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeTestRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU-CXX-CXXImportStd.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/TIClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CMakeInspectCXXLinker.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-Determine-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.0.2/CMakeCXXCompiler.cmake CMakeFiles/4.0.2/CMakeRCCompiler.cmake CMakeFiles/4.0.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/CMakeLists.txt C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/apps/calculadora/CMakeLists.txt C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/apps/simulador/CMakeLists.txt C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/interfaz/CMakeLists.txt C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/profiler_lib/CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.0.2/CMakeCXXCompiler.cmake CMakeFiles/4.0.2/CMakeRCCompiler.cmake CMakeFiles/4.0.2/CMakeSystem.cmake: phony
+build C$:/Codigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/CMakeLists.txt C$:/Codigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/apps/calculadora/CMakeLists.txt C$:/Codigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/apps/simulador/CMakeLists.txt C$:/Codigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/interfaz/CMakeLists.txt C$:/Codigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/profiler_lib/CMakeLists.txt C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCXXCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCXXCompilerABI.cpp C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCompilerIdDetection.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeDetermineCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeDetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeDetermineCompilerSupport.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeDetermineRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeDetermineSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeFindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeParseLibraryArchitecture.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeRCCompiler.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeSystem.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeTestCXXCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeTestCompilerCommon.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeTestRCCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU-CXX-CXXImportStd.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/TIClang-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CMakeDetermineLinkerId.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/CMakeInspectCXXLinker.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Internal/FeatureTesting.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Linker/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Linker/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-Determine-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2025.2/bin/cmake/win/x64/share/cmake-4.0/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.0.2/CMakeCXXCompiler.cmake CMakeFiles/4.0.2/CMakeRCCompiler.cmake CMakeFiles/4.0.2/CMakeSystem.cmake: phony
 
 
 #############################################

@@ -99,7 +99,7 @@ rule CXX_EXECUTABLE_LINKER__profiler_gui_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = "C:\Program Files\JetBrains\CLion 2025.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Códigos\Datos 2\ProyectoMemoria\ProyectoMemoria" -B"C:\Códigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug"
+  command = "C:\Program Files\JetBrains\CLion 2025.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -S"C:\Codigos\Datos 2\ProyectoMemoria\ProyectoMemoria" -B"C:\Codigos\Datos 2\ProyectoMemoria\ProyectoMemoria\cmake-build-debug"
   description = Re-running CMake...
   generator = 1
 

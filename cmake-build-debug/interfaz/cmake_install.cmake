@@ -1,4 +1,4 @@
-# Install script for directory: C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/interfaz
+# Install script for directory: C:/Codigos/Datos 2/ProyectoMemoria/ProyectoMemoria/interfaz
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,6 +40,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/interfaz/install_local_manifest.txt"
+  file(WRITE "C:/Codigos/Datos 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/interfaz/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

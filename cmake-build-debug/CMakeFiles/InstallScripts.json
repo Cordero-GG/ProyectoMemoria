@@ -1,11 +1,11 @@
 {
 	"InstallScripts" : 
 	[
-		"C:/C\u00f3digos/Datos 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/cmake_install.cmake",
-		"C:/C\u00f3digos/Datos 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/profiler_lib/cmake_install.cmake",
-		"C:/C\u00f3digos/Datos 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/apps/calculadora/cmake_install.cmake",
-		"C:/C\u00f3digos/Datos 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/apps/simulador/cmake_install.cmake",
-		"C:/C\u00f3digos/Datos 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/interfaz/cmake_install.cmake"
+		"C:/Codigos/Datos 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/cmake_install.cmake",
+		"C:/Codigos/Datos 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/profiler_lib/cmake_install.cmake",
+		"C:/Codigos/Datos 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/apps/calculadora/cmake_install.cmake",
+		"C:/Codigos/Datos 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/apps/simulador/cmake_install.cmake",
+		"C:/Codigos/Datos 2/ProyectoMemoria/ProyectoMemoria/cmake-build-debug/interfaz/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

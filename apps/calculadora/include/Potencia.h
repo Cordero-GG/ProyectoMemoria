@@ -5,7 +5,7 @@
 #ifndef PROYECTOMEMORIA_POTENCIA_H
 #define PROYECTOMEMORIA_POTENCIA_H
 
-typedef float* punteroPotencia;
+typedef double* punteroPotencia;
 class Potencia
 {
 public:

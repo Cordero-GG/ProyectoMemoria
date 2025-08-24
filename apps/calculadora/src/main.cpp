@@ -8,11 +8,13 @@
 
 int main()
 {
-    float p1, p2, resultado;
+    double p1, p2;
     char op;
+    // Se crean los objetos de las clases
     Calculadora calc;
     Potencia pot;
-
+    std::array<double , 1000000> memoriaArray; // Array para almacenar resultados
+    std::size_t índice = 0; // Índice para el array de memoria
 
     do {
         std::cout << "Elija la ecuación que se va a realizar: (+ - * / ^): ";
@@ -29,7 +31,10 @@ int main()
             calc.operación(&p1, &p2, op); // Asume que el resultado se guarda en p1 o p2
             std::cout << "Resultado: " << p1 << std::endl; // Imprime el resultado modificado
         }
+        //Aquí se agregan los elementos al array de memoria
+        calc.agregarMemoriaArray(&memoriaArray, &p1, &índice);
+
         std::cout << "¿Desea realizar otra operación? (s/n): ";
         std::cin >> op;
-    } while (op == 's' || op == 'S');
+    }while (op == 's' || op == 'S');
 }

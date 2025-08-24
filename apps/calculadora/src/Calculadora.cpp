@@ -25,4 +25,13 @@ void Calculadora::operación(punteroBásico a, punteroBásico b, char símbolo)
     std::cout<<"El resultado es: "<<*a;
 }
 
+void Calculadora::agregarMemoriaArray(punteroArray arreglo, punteroBásico elemento, std::size_t* índice)
+{
+    if (*índice < arreglo->size())
+    {
+        (*arreglo)[*índice] = *elemento;
+        (*índice)++;
+    }
+}
+
 
