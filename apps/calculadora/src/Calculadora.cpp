@@ -2,13 +2,13 @@
 ///Se define la clase de calculadora, y la lógica de los métodos
 ///<Summary>
 
-#include "Calculadora.h"
+#include "../include/Calculadora.h"
 #include <iostream>
 
-Calculadora::Calculadora(){}
-Calculadora::~Calculadora(){}
+Calculadora::Calculadora() = default;
+Calculadora::~Calculadora() = default;
 
-void Calculadora::operación(punteroBásico a, punteroBásico b, char símbolo)
+void Calculadora::operación(punteroBasico a, punteroBasico b, char símbolo)
 {
     switch (símbolo)
     {
@@ -20,18 +20,16 @@ void Calculadora::operación(punteroBásico a, punteroBásico b, char símbolo)
             else std::cout<<"No se pueden hacer diviciones entre 0";
         break;
     default:
-        std::cout<<"El símbolo ingresado no es válido";
+        std::cout<<"El simbolo ingresado no es válido";
     }
     std::cout<<"El resultado es: "<<*a;
 }
 
-void Calculadora::agregarMemoriaArray(punteroArray arreglo, punteroBásico elemento, std::size_t* índice)
+void Calculadora::agregarMemoriaArray(punteroArray arreglo, punteroBasico elemento, std::size_t* indice)
 {
-    if (*índice < arreglo->size())
+    if (*indice < 100000) // Tamaño fijo del arreglo
     {
-        (*arreglo)[*índice] = *elemento;
-        (*índice)++;
+        arreglo[*indice] = *elemento;
+        (*indice)++;
     }
 }
-
-

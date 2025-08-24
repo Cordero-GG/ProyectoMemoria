@@ -1,12 +1,13 @@
+cmake_minimum_required(VERSION 3.10)
+project(calculadora)
+
 # Incluir headers
 include_directories(include)
 
 # Crear ejecutable de la calculadora
 add_executable(calculadora src/main.cpp
         src/Calculadora.cpp
-        src/Potencia.cpp
-        include/Calculadora.h
-        include/Potencia.h)
+        src/Potencia.cpp)
 
 # Archivos fuente
 set(SOURCES
@@ -14,6 +15,3 @@ set(SOURCES
         src/Calculadora.cpp
         src/Potencia.cpp
 )
-
-# Decirle que use la librería profiler_lib
-target_link_libraries(calculadora PRIVATE profiler_lib)

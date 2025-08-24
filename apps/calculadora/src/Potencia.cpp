@@ -2,7 +2,7 @@
 ///Se agrega la lógica de la clase que se encarga de las ecuaciones con potencias
 ///<Summary>
 
-#include "Potencia.h"
+#include "../include/Potencia.h"
 #include <cmath>
 #include <iostream>
 Potencia::Potencia(){}
@@ -12,4 +12,3 @@ void Potencia::operadorPotencia(punteroPotencia a, punteroPotencia b, char Opera
 {
     *a = pow(*a, *b);
 }
-
