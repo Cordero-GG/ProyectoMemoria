@@ -139,13 +139,29 @@ build profiler_lib/rebuild_cache: phony profiler_lib/CMakeFiles/rebuild_cache.ut
 
 build cmake_object_order_depends_target_calculadora: phony || cmake_object_order_depends_target_profiler_lib
 
-build apps/calculadora/CMakeFiles/calculadora.dir/main.cpp.obj: CXX_COMPILER__calculadora_unscanned_Debug C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/apps/calculadora/main.cpp || cmake_object_order_depends_target_calculadora
+build apps/calculadora/CMakeFiles/calculadora.dir/src/main.cpp.obj: CXX_COMPILER__calculadora_unscanned_Debug C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/apps/calculadora/src/main.cpp || cmake_object_order_depends_target_calculadora
   CONFIG = Debug
-  DEP_FILE = apps\calculadora\CMakeFiles\calculadora.dir\main.cpp.obj.d
+  DEP_FILE = apps\calculadora\CMakeFiles\calculadora.dir\src\main.cpp.obj.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -I"C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/profiler_lib"
+  INCLUDES = -I"C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/apps/calculadora/include" -I"C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/profiler_lib"
   OBJECT_DIR = apps\calculadora\CMakeFiles\calculadora.dir
-  OBJECT_FILE_DIR = apps\calculadora\CMakeFiles\calculadora.dir
+  OBJECT_FILE_DIR = apps\calculadora\CMakeFiles\calculadora.dir\src
+
+build apps/calculadora/CMakeFiles/calculadora.dir/src/Calculadora.cpp.obj: CXX_COMPILER__calculadora_unscanned_Debug C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/apps/calculadora/src/Calculadora.cpp || cmake_object_order_depends_target_calculadora
+  CONFIG = Debug
+  DEP_FILE = apps\calculadora\CMakeFiles\calculadora.dir\src\Calculadora.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/apps/calculadora/include" -I"C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/profiler_lib"
+  OBJECT_DIR = apps\calculadora\CMakeFiles\calculadora.dir
+  OBJECT_FILE_DIR = apps\calculadora\CMakeFiles\calculadora.dir\src
+
+build apps/calculadora/CMakeFiles/calculadora.dir/src/Potencia.cpp.obj: CXX_COMPILER__calculadora_unscanned_Debug C$:/Códigos/Datos$ 2/ProyectoMemoria/ProyectoMemoria/apps/calculadora/src/Potencia.cpp || cmake_object_order_depends_target_calculadora
+  CONFIG = Debug
+  DEP_FILE = apps\calculadora\CMakeFiles\calculadora.dir\src\Potencia.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/apps/calculadora/include" -I"C:/Códigos/Datos 2/ProyectoMemoria/ProyectoMemoria/profiler_lib"
+  OBJECT_DIR = apps\calculadora\CMakeFiles\calculadora.dir
+  OBJECT_FILE_DIR = apps\calculadora\CMakeFiles\calculadora.dir\src
 
 
 # =============================================================================
@@ -155,7 +171,7 @@ build apps/calculadora/CMakeFiles/calculadora.dir/main.cpp.obj: CXX_COMPILER__ca
 #############################################
 # Link the executable apps\calculadora\calculadora.exe
 
-build apps/calculadora/calculadora.exe: CXX_EXECUTABLE_LINKER__calculadora_Debug apps/calculadora/CMakeFiles/calculadora.dir/main.cpp.obj | profiler_lib/libprofiler_lib.a || profiler_lib/libprofiler_lib.a
+build apps/calculadora/calculadora.exe: CXX_EXECUTABLE_LINKER__calculadora_Debug apps/calculadora/CMakeFiles/calculadora.dir/src/main.cpp.obj apps/calculadora/CMakeFiles/calculadora.dir/src/Calculadora.cpp.obj apps/calculadora/CMakeFiles/calculadora.dir/src/Potencia.cpp.obj | profiler_lib/libprofiler_lib.a || profiler_lib/libprofiler_lib.a
   CONFIG = Debug
   FLAGS = -g
   LINK_LIBRARIES = profiler_lib/libprofiler_lib.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32

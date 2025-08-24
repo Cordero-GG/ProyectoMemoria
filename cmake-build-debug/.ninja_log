@@ -1,5 +1,12 @@
 # ninja log v6
 6	116	7771500809160816	profiler_lib/CMakeFiles/profiler_lib.dir/profiler.cpp.obj	b202c8c88dbeae10
 118	330	7771500810277618	profiler_lib/libprofiler_lib.a	1151ec21a85c6444
-15	787	7771500809253059	apps/calculadora/CMakeFiles/calculadora.dir/main.cpp.obj	624eb2634ae4ec0
-789	1049	7771500816981202	apps/calculadora/calculadora.exe	83ef2a746a282f0
+7	873	7775999805324926	apps/calculadora/CMakeFiles/calculadora.dir/main.cpp.obj	624eb2634ae4ec0
+807	1276	7776820199350121	apps/calculadora/calculadora.exe	7f9050d6e8d19487
+26	121	7776820191538328	apps/calculadora/CMakeFiles/calculadora.dir/src/Potencia.cpp.obj	23b501ef770ca689
+17	125	7776820191457189	apps/calculadora/CMakeFiles/calculadora.dir/src/Calculadora.cpp.obj	8e7991e982d4c6d2
+8	804	7776820191355465	apps/calculadora/CMakeFiles/calculadora.dir/src/main.cpp.obj	6ec6e8c6d73f0f37
+37	1359	7777041555939043	apps/calculadora/CMakeFiles/calculadora.dir/src/main.cpp.obj	4bb4efe20eae5117
+53	1361	7777041556094572	apps/calculadora/CMakeFiles/calculadora.dir/src/Calculadora.cpp.obj	e0b4c4c12743ac0
+64	1495	7777041556210715	apps/calculadora/CMakeFiles/calculadora.dir/src/Potencia.cpp.obj	b8d8cd05313ffcac
+1495	2038	7777041570511135	apps/calculadora/calculadora.exe	7f9050d6e8d19487
