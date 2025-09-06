@@ -4,6 +4,7 @@
 
 #include "../include/Calculadora.h"
 #include "../include/Potencia.h"
+#include "profiler.h"
 #include <iostream>
 
 int main()

@@ -2,7 +2,7 @@
 ///Se define la clase de calculadora, y la lógica de los métodos
 ///<Summary>
 
-#include "../include/Calculadora.h"
+#include "Calculadora.h"
 #include <iostream>
 
 Calculadora::Calculadora() = default;
