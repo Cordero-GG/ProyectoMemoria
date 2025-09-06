@@ -24,7 +24,8 @@ public:
     static void TomarInformacion(void* ptr, size_t size);
     static void EliminarInformacion(void* ptr);
     static std::size_t tomarMemoriaTotal();// Devuelve la memoria total en bytes sirve como un getter
-    static std::size_t tomarCantidadGuardados(); // Devuelve la cantidad de asignaciones de memoria sirve como un getter
+    static std::size_t tomarCantidadGuardados();
+    static void ReportarMemoryLeaks();// Devuelve la cantidad de asignaciones de memoria sirve como un getter
 };
 
 void* operator new(std::size_t size);
