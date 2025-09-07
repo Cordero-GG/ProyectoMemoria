@@ -1,4 +1,4 @@
-#include "profiler.h" // Incluye tu profiler
+#include "../profiler_lib/profiler.h"
 #include <iostream>
 #include <thread>
 #include <vector>
