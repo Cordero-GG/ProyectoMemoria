@@ -4,6 +4,8 @@
 #include <mutex>
 #include <unordered_map>
 #include <cstddef>
+#include <string>
+#include <utility>
 
 struct InfoMemoria
 {
@@ -16,18 +18,25 @@ struct InfoMemoria
 class Profiler
 {
 private:
-    static std::unordered_map<void*, InfoMemoria> Metadatos; // Mapa para almacenar metadatos de memoria
-    static std::mutex mutexMetadatos; // Esto es para que no se ejecuten varios hilos a la vez
+    static std::unordered_map<void*, InfoMemoria> Metadatos;
+    static std::mutex mutexMetadatos;
     static size_t memoriaTotal;
     static size_t cantidadGuardados;
+    static size_t maxMemoriaUsada;
+    static size_t totalAsignaciones;
 
 public:
     // Métodos de tracking
     static void TomarInformacion(void* ptr, size_t size, const char* file, int line);
     static void EliminarInformacion(void* ptr);
-    static std::size_t tomarMemoriaTotal(); // Devuelve la memoria total en bytes sirve como un getter
+    static std::size_t tomarMemoriaTotal();
     static std::size_t tomarCantidadGuardados();
-    static void ReportarMemoryLeaks(); // Devuelve la cantidad de asignaciones de memoria sirve como un getter
+    static std::size_t tomarMaxMemoriaUsada();
+    static std::size_t tomarTotalAsignaciones();
+    static void ReportarMemoryLeaks();
+
+    // Nuevo método para obtener resumen por archivo
+    static std::unordered_map<std::string, std::pair<size_t, size_t>> obtenerResumenPorArchivo();
 };
 
 void* operator new(std::size_t size, const char* file, int line);
@@ -39,7 +48,6 @@ void* operator new(std::size_t size);
 void operator delete(void* ptr) noexcept;
 void* operator new[](std::size_t size);
 void operator delete[](void* ptr) noexcept;
-
 
 #ifndef DISABLE_PROFILER_MACRO
 #define new new(__FILE__, __LINE__)

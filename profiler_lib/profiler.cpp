@@ -1,67 +1,55 @@
-#include "profiler.h"
-#include <iostream>
-using namespace std;
+#ifndef PROYECTOMEMORIA_PROFILER_H
+#define PROYECTOMEMORIA_PROFILER_H
+#include <chrono>
+#include <mutex>
+#include <unordered_map>
+#include <cstddef>
+#include <string>
+#include <utility>
 
-//Inicializar las variables estáticas
-std::unordered_map<void*, InfoMemoria>Profiler::Metadatos;
-std::mutex Profiler::mutexMetadatos;
-size_t Profiler::memoriaTotal = 0;
-size_t Profiler::cantidadGuardados = 0;
-
-//Implementación de TomarInformacion
-void Profiler::TomarInformacion(void* ptr, size_t size, const char* file, int line) {
-    std::lock_guard<std::mutex> lock(mutexMetadatos);
-    InfoMemoria info;
-    info.size = size;
-    info.timestamp = std::chrono::system_clock::now();
-    info.file = file;
-    info.line = line;
-    Metadatos[ptr] = info;
-    memoriaTotal += size;
-    cantidadGuardados++;
-}
-
-//Implementación de EliminarInformacion
-void Profiler::EliminarInformacion(void* ptr) {
-    std::lock_guard<std::mutex> lock(mutexMetadatos);
-    auto it = Metadatos.find(ptr);
-    if (it != Metadatos.end()) {
-        memoriaTotal -= it->second.size;
-        Metadatos.erase(it);
-        cantidadGuardados--;
-    }
-}
-
-//Implementación de tomarMemoriaTotal
-std::size_t Profiler::tomarMemoriaTotal()
+struct InfoMemoria
 {
-    std::lock_guard<std::mutex> lock(mutexMetadatos);
-    return memoriaTotal;
-}
+    std::size_t size;
+    std::chrono::system_clock::time_point timestamp;
+    const char* file;
+    int line;
+};
 
-//Implementación de tomarCantidadGuardados
-std::size_t Profiler::tomarCantidadGuardados()
+class Profiler
 {
-    std::lock_guard<std::mutex> lock(mutexMetadatos);
-    return cantidadGuardados;
-}
+private:
+    static std::unordered_map<void*, InfoMemoria> Metadatos;
+    static std::mutex mutexMetadatos;
+    static size_t memoriaTotal;
+    static size_t cantidadGuardados;
+    static size_t maxMemoriaUsada;
+    static size_t totalAsignaciones;
 
-//Implementación de ReportarMemoryLeaks
-void Profiler::ReportarMemoryLeaks() {
-    std::lock_guard<std::mutex> lock(mutexMetadatos);
-    if (Metadatos.empty()) {
-        std::cout << "No hay memory leaks" << std::endl;
-    } else {
-        std::cout <<Metadatos.size() << "MEMORY LEAKS DETECTADOS:" << std::endl;
-        for (const auto& [direccion, info] : Metadatos) {
-            // Calcular cuánto tiempo pasó desde la asignación
-            auto ahora = std::chrono::system_clock::now();
-            auto duracion = std::chrono::duration_cast<std::chrono::seconds> (ahora - info.timestamp);
-            std::cout <<direccion << " - " << info.size
-                      << " bytes (hace " << duracion.count() << " segundos) en "
-            << info.file << ":" << info.line << std::endl;
-        }
+public:
+    // Métodos de tracking
+    static void TomarInformacion(void* ptr, size_t size, const char* file, int line);
+    static void EliminarInformacion(void* ptr);
+    static std::size_t tomarMemoriaTotal();
+    static std::size_t tomarCantidadGuardados();
+    static std::size_t tomarMaxMemoriaUsada();
+    static std::size_t tomarTotalAsignaciones();
+    static void ReportarMemoryLeaks();
 
-        std::cout << "Total de memoria fugada: " << memoriaTotal << " bytes" << std::endl;
-    }
-}
+    // Nuevo método para obtener resumen por archivo
+    static std::unordered_map<std::string, std::pair<size_t, size_t>> obtenerResumenPorArchivo();
+};
+
+void* operator new(std::size_t size, const char* file, int line);
+void operator delete(void* ptr, const char* file,int line) noexcept;
+void* operator new[](std::size_t size, const char* file, int line);
+void operator delete[](void* ptr, const char* file, int line) noexcept;
+
+void* operator new(std::size_t size);
+void operator delete(void* ptr) noexcept;
+void* operator new[](std::size_t size);
+void operator delete[](void* ptr) noexcept;
+
+#ifndef DISABLE_PROFILER_MACRO
+#define new new(__FILE__, __LINE__)
+#endif
+#endif
