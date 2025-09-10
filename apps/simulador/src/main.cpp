@@ -1,29 +1,30 @@
+#define USER_SOURCE
+#include <profiler.h>
 #include <iostream>
 #include <string>
 #include "../include/chat.h"
 
 void showMenu() {
-    cout << "\n=== SISTEMA DE CHAT ===" << endl;
-    cout << "1. Mostrar contactos" << endl;
-    cout << "2. Añadir contacto" << endl;
-    cout << "3. Eliminar contacto" << endl;
-    cout << "4. Seleccionar chat" << endl;
-    cout << "5. Enviar mensaje" << endl;
-    cout << "6. Mostrar chat actual" << endl;
-    cout << "7. Salir" << endl;
-    cout << "Selecciona una opción: ";
+    std::cout << "\n=== SISTEMA DE CHAT ===" << std::endl;
+    std::cout << "1. Mostrar contactos" << std::endl;
+    std::cout << "2. Añadir contacto" << std::endl;
+    std::cout << "3. Eliminar contacto" << std::endl;
+    std::cout << "4. Seleccionar chat" << std::endl;
+    std::cout << "5. Enviar mensaje" << std::endl;
+    std::cout << "6. Mostrar chat actual" << std::endl;
+    std::cout << "7. Salir" << std::endl;
+    std::cout << "Selecciona una opción: ";
 }
 
 int main() {
     chat chatSystem;
     int choice;
-    string input;
-
+    std::string input;
 
     do {
         showMenu();
-        cin >> choice;
-        cin.ignore(); // Limpiar buffer
+        std::cin >> choice;
+        std::cin.ignore(); // Limpiar buffer
 
         switch (choice) {
             case 1:
@@ -31,26 +32,26 @@ int main() {
                 break;
 
             case 2:
-                cout << "Nombre del nuevo contacto: ";
-                getline(cin, input);
+                std::cout << "Nombre del nuevo contacto: ";
+                std::getline(std::cin, input);
                 chatSystem.addContact(input);
                 break;
 
             case 3:
-                cout << "Nombre del contacto a eliminar: ";
-                getline(cin, input);
+                std::cout << "Nombre del contacto a eliminar: ";
+                std::getline(std::cin, input);
                 chatSystem.removeContact(input);
                 break;
 
             case 4:
-                cout << "Seleccionar chat con: ";
-                getline(cin, input);
+                std::cout << "Seleccionar chat con: ";
+                std::getline(std::cin, input);
                 chatSystem.selectChat(input);
                 break;
 
             case 5:
-                cout << "Mensaje: ";
-                getline(cin, input);
+                std::cout << "Mensaje: ";
+                std::getline(std::cin, input);
                 chatSystem.sendMessage(input);
                 break;
 
@@ -59,14 +60,16 @@ int main() {
                 break;
 
             case 7:
-                cout << "Saliendo del sistema de chat" << endl;
+                std::cout << "Saliendo del sistema de chat" << std::endl;
                 break;
 
             default:
-                cout << "Opción inválida." << endl;
+                std::cout << "Opción inválida." << std::endl;
         }
     } while (choice != 7);
 
+    // Reportar memory leaks al finalizar
+    Profiler::ReportarMemoryLeaks();
 
     return 0;
 }

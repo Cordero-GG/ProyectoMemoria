@@ -1,31 +1,21 @@
-#include "../include/contactos.h"
-#include <iostream>
-using namespace std;
+#ifndef PROYECTOMEMORIA_CONTACTOS_H
+#define PROYECTOMEMORIA_CONTACTOS_H
 
-contactos::contactos(const string& contactName) : name(contactName) {
-    cout << "Contacto " << name << " creado." << endl;
-}
+#include <string>
+#include <vector>
 
-contactos::~contactos() {
-    cout << "Contacto " << name << " siendo destruido." << endl;
+class contactos {
+private:
+    std::string name;
+    std::vector<std::string*> messages; // Fuente intencional de memory leaks
 
-    // No liberamos los mensajes para generar memory leaks
-}
+public:
+    contactos(const std::string& name);
+    ~contactos();
 
-string contactos::getName() const {
-    return name;
-}
+    std::string getName() const;
+    void addMessage(const std::string& message);
+    void displayChat() const;
+};
 
-void contactos::addMessage(const string& message) {
-    // Creamos string en heap que no se liberará
-    string* newMessage = new string(message);
-    messages.push_back(newMessage);
-}
-
-void contactos::displayChat() const {
-    cout << "\n--- Chat con " << name << " ---" << endl;
-    for (const auto& msg : messages) {
-        cout << *msg << endl;
-    }
-    cout << "----------------------------" << endl;
-}
+#endif //PROYECTOMEMORIA_CONTACTOS_H

@@ -1,14 +1,22 @@
-///<Summary>
-///Se agrega la lógica de la clase que se encarga de las ecuaciones con potencias
-///<Summary>
-
-#include "../include/Potencia.h"
-#include <cmath>
+#define USER_SOURCE
+#include "../../profiler_lib/profiler.h"
+#include "Potencia.h"
 #include <iostream>
-Potencia::Potencia(){}
-Potencia::~Potencia(){}
+#include <cmath>
 
-void Potencia::operadorPotencia(punteroPotencia a, punteroPotencia b, char Operando)
-{
-    *a = pow(*a, *b);
+Potencia::Potencia() {
+    std::cout << "Calculadora de potencias inicializada." << std::endl;
+}
+
+Potencia::~Potencia() {
+    std::cout << "Calculadora de potencias finalizada." << std::endl;
+}
+
+void Potencia::operadorPotencia(punteroPotencia a, punteroPotencia b, char Operando) {
+    if (Operando == '^') {
+        *a = std::pow(*a, *b);
+        std::cout << "Resultado de la potencia: " << *a << std::endl;
+    } else {
+        std::cout << "Operador no válido para potencia." << std::endl;
+    }
 }
