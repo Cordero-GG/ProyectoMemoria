@@ -1,0 +1,11 @@
+C:/Users/GokFu/OneDrive/Desktop/ProyectoMemoria/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/GokFu/OneDrive/Desktop/ProyectoMemoria/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/GokFu/OneDrive/Desktop/ProyectoMemoria/build/profiler_lib/CMakeFiles/profiler_lib.dir
+C:/Users/GokFu/OneDrive/Desktop/ProyectoMemoria/build/profiler_lib/CMakeFiles/ALL_BUILD.dir
+C:/Users/GokFu/OneDrive/Desktop/ProyectoMemoria/build/tests/CMakeFiles/profiler_test.dir
+C:/Users/GokFu/OneDrive/Desktop/ProyectoMemoria/build/tests/CMakeFiles/ALL_BUILD.dir
+C:/Users/GokFu/OneDrive/Desktop/ProyectoMemoria/build/apps/calculadora/CMakeFiles/calculadora.dir
+C:/Users/GokFu/OneDrive/Desktop/ProyectoMemoria/build/apps/calculadora/CMakeFiles/ALL_BUILD.dir
+C:/Users/GokFu/OneDrive/Desktop/ProyectoMemoria/build/apps/simulador/CMakeFiles/simulador.dir
+C:/Users/GokFu/OneDrive/Desktop/ProyectoMemoria/build/apps/simulador/CMakeFiles/ALL_BUILD.dir
+C:/Users/GokFu/OneDrive/Desktop/ProyectoMemoria/build/interfaz/CMakeFiles/profiler_gui.dir

@@ -1,0 +1,4 @@
+"C:\Program Files\JetBrains\CLion 2025.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S C:\Users\GokFu\OneDrive\Desktop\ProyectoMemoria -B C:\Users\GokFu\OneDrive\Desktop\ProyectoMemoria\cmake-build-debug
+-- Configuring done (1.1s)
+-- Generating done (0.8s)
+-- Build files have been written to: C:/Users/GokFu/OneDrive/Desktop/ProyectoMemoria/cmake-build-debug
