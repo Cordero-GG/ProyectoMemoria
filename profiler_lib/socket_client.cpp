@@ -13,6 +13,7 @@ SocketClient::SocketClient() : sock(INVALID_SOCKET), connected(false), running(t
     }
     connect();
     senderThread = std::thread(&SocketClient::sendThread, this);
+
     // Mensajes de depuración
     if (connected) {
         std::cout << "SocketClient: Conectado al servidor en "
@@ -40,7 +41,7 @@ SocketClient& SocketClient::getInstance() {
 void SocketClient::connect() {
     sock = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
     if (sock == INVALID_SOCKET) {
-        std::cerr << "Error creating socket." << std::endl;
+        std::cerr << "Error creating socket: " << WSAGetLastError() << std::endl;
         return;
     }
 
@@ -50,18 +51,20 @@ void SocketClient::connect() {
     serverAddr.sin_addr.s_addr = inet_addr(PROFILER_SERVER_IP);
 
     if (::connect(sock, (sockaddr*)&serverAddr, sizeof(serverAddr)) == SOCKET_ERROR) {
-        std::cerr << "Failed to connect to server." << std::endl;
+        std::cerr << "Failed to connect to server: " << WSAGetLastError() << std::endl;
         closesocket(sock);
         sock = INVALID_SOCKET;
         return;
     }
 
     connected = true;
+    std::cout << "Conexión exitosa al servidor." << std::endl;
 }
 
 void SocketClient::enqueueMessage(const std::string& message) {
     std::lock_guard<std::mutex> lock(queueMutex);
     messageQueue.push(message);
+    std::cout << "Mensaje encolado: " << message.substr(0, 50) << "..." << std::endl;
 }
 
 void SocketClient::sendThread() {
@@ -75,8 +78,26 @@ void SocketClient::sendThread() {
             }
         }
 
-        if (!message.empty() && isConnected()) {
-            send(sock, message.c_str(), message.length(), 0);
+        if (!message.empty()) {
+            if (isConnected()) {
+                int result = send(sock, message.c_str(), message.length(), 0);
+                if (result == SOCKET_ERROR) {
+                    std::cerr << "Error al enviar mensaje: " << WSAGetLastError() << std::endl;
+                    connected = false;
+                    // Intentar reconectar
+                    connect();
+                } else {
+                    std::cout << "Mensaje enviado (" << result << " bytes)" << std::endl;
+                }
+            } else {
+                // Intentar reconectar si no está conectado
+                connect();
+                // Re-encolar el mensaje si no se pudo enviar
+                if (!isConnected()) {
+                    std::lock_guard<std::mutex> lock(queueMutex);
+                    messageQueue.push(message);
+                }
+            }
         }
 
         std::this_thread::sleep_for(std::chrono::milliseconds(10));
