@@ -1,5 +1,19 @@
-# Crear ejecutable del simulador
-add_executable(simulador main.cpp)
+cmake_minimum_required(VERSION 3.10)
+project(simulador)
 
-# Decirle que use la librería profiler_lib
-target_link_libraries(simulador PRIVATE profiler_lib)
+# Incluir directorios de headers
+include_directories(include)
+
+# Archivos fuente
+set(SOURCES
+        src/main.cpp
+        src/chat.cpp
+        src/contactos.cpp
+)
+
+# Crear el ejecutable
+add_executable(simulador src/main.cpp
+        src/chat.cpp
+        src/contactos.cpp
+        include/chat.h
+        include/contactos.h)

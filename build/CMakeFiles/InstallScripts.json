@@ -1,0 +1,12 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/GokFu/OneDrive/Desktop/ProyectoMemoria/build/cmake_install.cmake",
+		"C:/Users/GokFu/OneDrive/Desktop/ProyectoMemoria/build/profiler_lib/cmake_install.cmake",
+		"C:/Users/GokFu/OneDrive/Desktop/ProyectoMemoria/build/tests/cmake_install.cmake",
+		"C:/Users/GokFu/OneDrive/Desktop/ProyectoMemoria/build/apps/calculadora/cmake_install.cmake",
+		"C:/Users/GokFu/OneDrive/Desktop/ProyectoMemoria/build/apps/simulador/cmake_install.cmake",
+		"C:/Users/GokFu/OneDrive/Desktop/ProyectoMemoria/build/interfaz/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

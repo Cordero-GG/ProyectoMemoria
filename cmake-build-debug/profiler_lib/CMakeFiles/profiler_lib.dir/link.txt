@@ -1,0 +1,2 @@
+C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\ar.exe qc libprofiler_lib.a CMakeFiles/profiler_lib.dir/profiler.cpp.obj CMakeFiles/profiler_lib.dir/SobrescribirOperador.cpp.obj CMakeFiles/profiler_lib.dir/socket_client.cpp.obj CMakeFiles/profiler_lib.dir/json_serializer.cpp.obj
+C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\ranlib.exe libprofiler_lib.a
