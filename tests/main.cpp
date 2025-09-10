@@ -1,3 +1,4 @@
+#define USER_SOURCE
 #include "../profiler_lib/profiler.h"
 #include <iostream>
 #include <thread>

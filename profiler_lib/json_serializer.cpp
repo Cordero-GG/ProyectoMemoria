@@ -1,7 +1,7 @@
-#include "json_serializer.h"
 #include <chrono>
 #include <iomanip>
 #include <sstream>
+#include "json_serializer.h"
 
 using nlohmann::json;
 

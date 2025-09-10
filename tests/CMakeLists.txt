@@ -8,4 +8,10 @@ add_executable(profiler_test main.cpp)
 target_link_libraries(profiler_test profiler_lib)
 
 # Incluir directorios
-target_include_directories(profiler_test PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../profiler_lib)
+target_include_directories(profiler_test PUBLIC
+        ${CMAKE_CURRENT_SOURCE_DIR}/../profiler_lib
+        ${CMAKE_SOURCE_DIR}/include
+)
+
+# Librerías de red para Windows
+target_link_libraries(profiler_test ws2_32)

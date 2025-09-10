@@ -12,7 +12,7 @@ add_library(profiler_lib STATIC
 # Incluir directorios
 target_include_directories(profiler_lib PUBLIC
         ${CMAKE_CURRENT_SOURCE_DIR}
-        ${CMAKE_SOURCE_DIR}/include  # Agregamos el directorio include raíz
+        ${CMAKE_SOURCE_DIR}/include
 )
 
 # Habilitar C++11

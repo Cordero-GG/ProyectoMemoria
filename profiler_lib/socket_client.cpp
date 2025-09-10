@@ -1,7 +1,7 @@
-#include "socket_client.h"
-#include "config.h"
 #include <iostream>
 #include <chrono>
+#include "socket_client.h"
+#include "config.h"
 
 #pragma comment(lib, "ws2_32.lib")
 
@@ -13,6 +13,14 @@ SocketClient::SocketClient() : sock(INVALID_SOCKET), connected(false), running(t
     }
     connect();
     senderThread = std::thread(&SocketClient::sendThread, this);
+    // Mensajes de depuración
+    if (connected) {
+        std::cout << "SocketClient: Conectado al servidor en "
+                  << PROFILER_SERVER_IP << ":" << PROFILER_SERVER_PORT << std::endl;
+    } else {
+        std::cout << "SocketClient: No se pudo conectar al servidor. "
+                  << "Los datos se enviarán cuando el servidor esté disponible." << std::endl;
+    }
 }
 
 SocketClient::~SocketClient() {

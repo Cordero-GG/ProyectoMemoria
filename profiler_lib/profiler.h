@@ -7,6 +7,8 @@
 #include <string>
 #include <utility>
 
+
+
 struct InfoMemoria
 {
     std::size_t size;
@@ -15,7 +17,7 @@ struct InfoMemoria
     int line;
 };
 
-class Profiler
+class  Profiler
 {
 private:
     static std::unordered_map<void*, InfoMemoria> Metadatos;
@@ -49,7 +51,11 @@ void operator delete(void* ptr) noexcept;
 void* operator new[](std::size_t size);
 void operator delete[](void* ptr) noexcept;
 
+// Solo definir el macro new en archivos de usuario
 #ifndef DISABLE_PROFILER_MACRO
+#ifdef USER_SOURCE
 #define new new(__FILE__, __LINE__)
 #endif
+#endif
+
 #endif
